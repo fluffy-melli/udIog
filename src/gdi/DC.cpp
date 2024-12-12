@@ -21,6 +21,9 @@ void Peek(Graphic &n_hdc) {
         TranslateMessage(&n_hdc.msg);
         DispatchMessage(&n_hdc.msg);
         if (n_hdc.msg.message == WM_QUIT) {
+            for (auto& bmp : n_hdc.bitmap) {
+                delete bmp;
+            }
             ReleaseDC(NULL, n_hdc.hdc);
             GDI_Release(n_hdc.address);
             exit(EXIT_FAILURE);

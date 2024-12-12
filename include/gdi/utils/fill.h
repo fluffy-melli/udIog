@@ -6,8 +6,8 @@
 #include "./_location.h"
 #include "../DC.h"
 
-void reset(Graphic n_hdc);
+void Reset(Graphic n_hdc);
 
-void fill(Graphic n_hdc, RGBA color, ToLocation location);
+void Fill_Rect(Graphic n_hdc, RGBA color, ToLocation location);
 
 #endif // FILL_H

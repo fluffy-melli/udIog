@@ -4,6 +4,7 @@
 
 #include <windows.h>
 #include <iostream>
+#include <vector>
 #include "./GDI.h"
 
 struct Graphic {
@@ -11,6 +12,7 @@ struct Graphic {
     HDC hdc;
     ULONG_PTR address;
     Graphics* graphics;
+    std::vector<Gdiplus::Bitmap*> bitmap;
 };
 
 Graphic New_Graphic();
