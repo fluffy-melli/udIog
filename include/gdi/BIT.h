@@ -12,6 +12,4 @@ using namespace Gdiplus;
 
 Gdiplus::Bitmap* New_Bitmap(const wchar_t * filePath);
 
-void Draw_Image(Graphic n_hdc, int number, Location location);
-
 #endif // BIT_H

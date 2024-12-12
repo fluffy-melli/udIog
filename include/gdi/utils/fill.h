@@ -8,6 +8,6 @@
 
 void Reset(Graphic n_hdc);
 
-void Fill_Rect(Graphic n_hdc, RGBA color, ToLocation location);
+void Fill_Rect(Graphics* graphic, C_RGBA color, ToLocation location);
 
 #endif // FILL_H
